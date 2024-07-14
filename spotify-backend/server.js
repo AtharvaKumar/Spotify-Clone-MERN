@@ -17,8 +17,6 @@ connectDB()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://mern-book-store:Honuman%401928@cluster0.btbrnal.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-
 // Initializing Routers
 app.use("/api/song", songRouter )
 app.use("/api/album", albumRouter )
